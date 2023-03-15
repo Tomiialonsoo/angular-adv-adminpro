@@ -6,6 +6,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
 
+
 /* COMPONENTES */
 import { ProgressComponent } from './progress/progress.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -32,7 +33,8 @@ import { PagesComponent } from './pages.component';
     SharedModule,
     AppRoutingModule,
     FormsModule,
-    ComponentsModule
+    ComponentsModule,
+    
   ]
 })
 

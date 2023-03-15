@@ -34,4 +34,16 @@ export class IncrementadorComponent implements OnInit {
     this.porcentajeEmitido.emit(this.progressBar)    
   }
 
+  onChange( writeValue:number ){
+    if(writeValue>=100){
+      this.progressBar = 100;
+    }else if(writeValue<=0){
+      this.progressBar = 0
+    }else{
+      this.progressBar = writeValue;
+    }
+  
+     this.porcentajeEmitido.emit(this.progressBar);
+ }
+
 }
